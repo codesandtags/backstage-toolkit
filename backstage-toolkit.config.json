@@ -1,0 +1,12 @@
+{
+   "output": "tmp",
+   "generator": {
+      "groups": 10,
+      "components": 100,
+      "apis": 100,
+      "domains": 5,
+      "systems": 10,
+      "relations": true
+   },
+   "approach": "centralized"
+}

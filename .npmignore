@@ -1,0 +1,11 @@
+!dist/
+src
+
+*.json
+*.config.js
+*.yml
+
+*.tgz
+
+coverage
+test
