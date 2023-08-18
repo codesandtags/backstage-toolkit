@@ -1,6 +1,6 @@
 {
    "name": "backstage-toolkit",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "description": "Help teams to generate and validate their Backstage Entities for their Backstage Catalog.",
    "main": "index.js",
    "bin": {
