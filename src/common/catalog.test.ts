@@ -3,17 +3,17 @@ import {
    exportDomains,
    exportGroups,
    exportSystems,
-} from './catalog'
+} from './catalog.js'
 import {
    generateApis,
    generateDomains,
    generateGroups,
    generateSystems,
-} from '../features/generate-fake-catalog'
-import { BackstageToolkitConfig } from '../models/BackstageToolkitConfig'
+} from '../features/generate-fake-catalog.js'
+import { BackstageToolkitConfig } from '../models/BackstageToolkitConfig.js'
 
 import fs from 'fs'
-import * as fileUtils from './file-utils'
+import * as fileUtils from './file-utils.js'
 
 const fsWriteFileSync = jest.spyOn(fs, 'writeFileSync')
 const JSONToYAML = jest.spyOn(fileUtils, 'JSONToYAML')

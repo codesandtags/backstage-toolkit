@@ -1,11 +1,17 @@
 !dist/
+
 src
 
 *.json
 *.config.js
 *.yml
 
+!backstage-toolkit.config.json
+
 *.tgz
 
 coverage
 test
+
+tmp
+output

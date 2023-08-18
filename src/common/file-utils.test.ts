@@ -1,4 +1,4 @@
-import { JSONToYAML } from './file-utils'
+import { JSONToYAML } from './file-utils.js'
 
 describe('JSONToYAML', () => {
    it('should return an error when JSON is invalid', () => {
