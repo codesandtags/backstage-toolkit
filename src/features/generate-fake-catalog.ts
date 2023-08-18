@@ -63,7 +63,7 @@ export function generateApis(totalApis: number): ApiEntity[] {
             type: 'openapi',
             lifecycle: 'production',
             owner: 'guest',
-            definition: 'openapi.yaml',
+            definition: configBackstage.generator.openapiDefinition,
          },
       }
 

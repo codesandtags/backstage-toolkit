@@ -2,11 +2,12 @@
    "output": "tmp",
    "generator": {
       "groups": 10,
-      "components": 100,
-      "apis": 100,
+      "components": 2500,
+      "apis": 8400,
       "domains": 5,
       "systems": 10,
-      "relations": true
+      "relations": true,
+      "openapiDefinition": "https://github.com/APIs-guru/openapi-directory/blob/dab6854d4d599aafb0eb36e6c7ae1fe0c37509b7/APIs/spotify.com/2021.4.2/openapi.yaml"
    },
    "approach": "centralized"
 }

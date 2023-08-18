@@ -18,9 +18,13 @@ backstage-toolkit generate-catalog --help
 
 ## Features
 
-1. Generate a fake catalog to simulate a real world catalog, following the `Centralized Catalog` and `Decentralized Catalog` approaches.
-2. Generate catalog from `.csv` files to `.yaml` files.
-3. Validate catalog files.
+### Generate fake catalog
+
+Generate a fake catalog based on the configuration file `backstage-toolkit.config.js`.
+
+```bash
+backstage-toolkit generate --fake
+```
 
 ## How to install this repo locally?
 

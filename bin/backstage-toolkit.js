@@ -1,23 +1,23 @@
 #!/usr/bin/env ts-node --esm
 
 import { generateFakeCatalog } from '../dist/features/generate-fake-catalog.js'
+import packageJson from '../package.json' assert { type: 'json' }
 
 const args = process.argv.slice(2)
 const command = args[0]
 
 console.log(`
-Welcome to backstage-toolkit!
+👋 Welcome to backstage-toolkit!
 
-Running backstage-toolkit ${command}...
 `)
 
 const usage = `
 Usage: backstage-toolkit <command>
 
 Commands:
-  help        Show this help message
-  version     Show the version of backstage-toolkit
-  generate    Generate the catalog based on configuration
+  help           Show this help message
+  version        Show the version of backstage-toolkit
+  generate       Generate the catalog based on configuration
     --fake
 `
 ;(async () => {
@@ -26,11 +26,12 @@ Commands:
          console.log(usage)
          break
       case 'version':
+         console.log(`Version ${packageJson.version}\n`)
          break
       case 'generate':
          const fake = args[1] === '--fake'
          if (fake) {
-            console.log('Generating fake catalog...')
+            console.log('✨ Generating fake catalog...\n')
             await generateFakeCatalog()
          }
          break
