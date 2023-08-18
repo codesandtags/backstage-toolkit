@@ -33,9 +33,15 @@ export function generateGroups(totalGroups: number): GroupEntity[] {
          kind: 'Group',
          metadata: {
             name: `group-${index}`,
+            description: `Group ${index}`,
          },
          spec: {
             type: 'team',
+            profile: {
+               displayName: `Group ${index}`,
+               email: `group-${index}@example.com`,
+               picture: `https://avatars.dicebear.com/api/identicon/group-${index}.svg?background=%23fff&margin=25`,
+            },
             children: [],
          },
       }

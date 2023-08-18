@@ -166,7 +166,13 @@ export function exportCatalog(
       apis: exportApis(catalog.apis, config) || [],
       domains: exportDomains(catalog.domains, config) || [],
       systems: exportSystems(catalog.systems, config) || [],
-      entities: ['groups', 'components', 'apis', 'domains', 'systems'],
+      entities: [
+         'all-groups.yaml',
+         'all-components.yaml',
+         'all-apis.yaml',
+         'all-domains.yaml',
+         'all-systems.yaml',
+      ],
    }
 
    // Generate locations
