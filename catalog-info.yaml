@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-toolkit
+  description: A toolkit for building Backstage entities
+spec:
+  type: tool
+  lifecycle: development
+  owner: codesandtags
